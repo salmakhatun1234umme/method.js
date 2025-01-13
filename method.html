@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>method</title>
+  </head>
+  <body>
+    <div
+      onmouseout="removeEffect()"
+      onmouseover="hoverEffect()"
+      style="
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+      "
+    >
+      Hover Over Me
+    </div>
+
+    <input
+      onfocus="focuse()"
+      onblur="blur()"
+      style="margin-top: 20px; color: white; padding: 10px"
+      type="text"
+      onkeydown="keyDown()"
+      onkeyup="keyUp()"
+    />
+    <form action=""></form>
+
+    <p id="demo">this is pera</p>
+    <button onclick="styleText()">Click</button>
+
+    <script>
+      function styleText() {
+        const text = document.getElementById("demo");
+        const style = text.style;
+        style.color = "red";
+        style.backgroundColor='green'
+        style.fontSize='25px'
+        style.padding='20px'
+        style.width='30%'
+      }
+      function hoverEffect() {
+        event.target.style.backgroundColor = "yellow";
+      }
+      function removeEffect() {
+        event.target.style.backgroundColor = "green";
+      }
+
+      function keyDown() {
+        event.target.style.backgroundColor = "red";
+      }
+
+      function keyUp() {
+        event.target.style.backgroundColor = "green";
+      }
+      function focuse() {
+        event.target.style.border = "7px solid black";
+      }
+      function blur() {
+        event.target.style.backgroundColor = "lightcoral";
+      }
+    </script>
+  </body>
+</html>
