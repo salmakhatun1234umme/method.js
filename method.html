@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>method</title>
   </head>
+<link rel="stylesheet" href="style.css">
   <body>
     <div
       onmouseout="removeEffect()"
@@ -34,15 +35,7 @@
     <button onclick="styleText()">Click</button>
 
     <script>
-      function styleText() {
-        const text = document.getElementById("demo");
-        const style = text.style;
-        style.color = "red";
-        style.backgroundColor='green'
-        style.fontSize='25px'
-        style.padding='20px'
-        style.width='30%'
-      }
+   
       function hoverEffect() {
         event.target.style.backgroundColor = "yellow";
       }
@@ -64,5 +57,6 @@
         event.target.style.backgroundColor = "lightcoral";
       }
     </script>
+    <script src="/script.js"></script>
   </body>
 </html>
