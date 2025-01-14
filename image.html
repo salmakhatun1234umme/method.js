@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="image.css" />
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      "
+    >
+      <img
+        onmouseout="removeEffect()"
+        onmouseover="hoverEffect()"
+        style="
+          width: 350px;
+          height: 350px;
+          transition: 0.5s;
+          cursor: pointer;
+          margin-top: 40px;
+          border-radius: 20px;
+        "
+        src="pexels-pixabay-56866.jpg"
+        alt=""
+      />
+    </div>
+    <div style="text-align: center; margin-top: 40px">
+      <h1 id="hideText" style="font-size: 35px; transition: 0.5s">
+        Salma Khatun
+      </h1>
+      <button onclick="hide()">Click Me</button>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;margin-bottom: 50px;">
+      <img onclick="clickZoom ()" style="cursor:pointer; transition: 0.5s; width: 300px; height: 300px;" id="zoomIn"  src="Data entry.png" alt="" />
+
+    </div>
+    <script src="image.js"></script>
+  </body>
+</html>

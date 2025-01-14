@@ -1,0 +1,11 @@
+
+
+.hidden-mode{
+    display: none;
+}
+.zoom-mode{
+scale: 1.5;
+}
+button{
+    cursor: pointer;
+}
